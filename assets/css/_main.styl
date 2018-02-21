@@ -1,0 +1,48 @@
+@font-face
+	font-family arsenal
+	src url(../fonts/Arsenal-Regular.ttf)
+@font-face
+	font-family kozgo
+	src url(../fonts/KozGoPr6N-Regular.otf)
+*, *:before, *:after
+	box-sizing: border-box;
+h2,h1
+	margin 0
+	font-weight normal
+	color white
+h1
+	font-size 18px
+	font-family arsenal
+	letter-spacing 3px
+	line-height 26px
+	span.kozgo
+		font-family kozgo
+h2
+	font-size 14px
+	font-family arsenal
+	letter-spacing 3px
+.wrapper-landing
+	height 100vh
+	background #AD1F24
+	display flex
+	flex-direction column
+	justify-content space-between
+	align-items center
+	padding 70px
+figure
+	margin 0 0 35px
+	
+// -----------------------------
+@media (max-width: 768px)
+	figure
+		margin-bottom 15px
+	.wrapper-landing
+		padding 50px
+	.mid
+		width calc(100% - 25px)
+		h1
+			//text-align center
+			span
+				display none
+				&.kozgo
+					display block

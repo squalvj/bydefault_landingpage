@@ -1,0 +1,86 @@
+@font-face
+	font-family arsenal
+	src url(../fonts/Arsenal-Regular.ttf)
+@font-face
+	font-family kozgo
+	src url(../fonts/KozGoPr6N-Regular.otf)
+@font-face
+	font-family noto
+	src url(../fonts/NotoSansJP-Thin.otf)
+	
+	
+*, *:before, *:after
+	box-sizing: border-box;
+	transition opacity 1s ease
+	
+a
+	color inherit
+	font-family inherit
+	//text-decoration none
+	letter-spacing inherit
+h2,h1
+	margin 0
+	font-weight normal
+	color white
+h1
+	font-size 14px
+	font-family arsenal
+	letter-spacing 3px
+	line-height 26px
+	text-align: center;
+	padding: 0 30px;
+	span.kozgo
+		font-family kozgo
+h2
+	font-size 14px
+	font-family arsenal
+	letter-spacing 3px
+.container
+	height 100vh
+	background #AD1F24
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+.wrapper-landing
+	height 663px
+	max-width 1300px
+	background #AD1F24
+	display flex
+	flex-direction column
+	justify-content space-between
+	align-items center
+	padding 0 70px
+	//padding 70px
+figure
+	margin 0 0 25px
+.sec-1,.sec-2,.sec-3
+	opacity 0
+.noto
+	font-family noto
+// -----------------------------
+@media (max-width: 768px)
+	figure
+		margin-bottom 15px
+	.wrapper-landing
+		height 100vh
+		padding 50px
+	.mid
+		//width calc(100% - 25px)
+		h1
+			span
+				display none
+				&.noto
+					display block
+@media (max-width: 576px)
+	.wrapper-landing
+		padding 50px 25px
+	h1
+		font-size: 14px;
+		font-family: arsenal;
+		letter-spacing: 5px;
+		line-height: 17px;
+		text-align: center;
+		padding 0
+		.noto
+			font-size 12px
