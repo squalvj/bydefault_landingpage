@@ -6,7 +6,7 @@ $(window).bind("load", function() {
 			$(".sec-"+iv).removeClass('sec-'+iv);
 			console.log(iv);
 			iv++
-		},500 + (i * 700))
+		},0 + (i * 700))
 		i++;
 	}
 	

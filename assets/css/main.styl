@@ -5,8 +5,11 @@
 	font-family kozgo
 	src url(../fonts/KozGoPr6N-Regular.otf)
 @font-face
-	font-family noto
+	font-family notoT
 	src url(../fonts/NotoSansJP-Thin.otf)
+@font-face
+	font-family notoL
+	src url(../fonts/NotoSansJP-Light.otf)
 	
 	
 *, *:before, *:after
@@ -57,8 +60,11 @@ figure
 .sec-1,.sec-2,.sec-3
 	opacity 0
 .noto
-	font-family noto
+	font-family notoL
 // -----------------------------
+@media (max-height: 768px)
+	.wrapper-landing
+		padding 30px 70px
 @media (max-width: 768px)
 	figure
 		margin-bottom 15px
@@ -75,6 +81,8 @@ figure
 @media (max-width: 576px)
 	.wrapper-landing
 		padding 50px 25px
+	.noto
+		font-family notoT
 	h1
 		font-size: 14px;
 		font-family: arsenal;
@@ -84,3 +92,4 @@ figure
 		padding 0
 		.noto
 			font-size 12px
+			margin-top 5px
