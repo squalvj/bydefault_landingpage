@@ -16,6 +16,9 @@
 	box-sizing: border-box;
 	transition opacity 1s ease
 	
+.bot
+	a
+		letter-spacing 2px
 a
 	color inherit
 	font-family inherit
@@ -60,7 +63,9 @@ figure
 .sec-1,.sec-2,.sec-3
 	opacity 0
 .noto
-	font-family notoL
+	font-family notoT
+.br-mobile
+	display none
 // -----------------------------
 @media (max-height: 768px)
 	.wrapper-landing
@@ -79,12 +84,11 @@ figure
 				&.noto
 					display block
 @media (max-width: 576px)
+	
 	.wrapper-landing
 		padding 50px 25px
-	.noto
-		font-family notoT
 	h1
-		font-size: 14px;
+		font-size: 16px;
 		font-family: arsenal;
 		letter-spacing: 5px;
 		line-height: 17px;
@@ -93,3 +97,8 @@ figure
 		.noto
 			font-size 12px
 			margin-top 5px
+			letter-spacing 5px
+			font-family notoL
+@media (max-width: 420px)
+	.br-mobile
+			display inherit
