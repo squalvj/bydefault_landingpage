@@ -28,15 +28,26 @@ h2,h1
 	margin 0
 	font-weight normal
 	color white
+.wrapper-landing
+	height calc(100% - 144px)
+@media (min-height: 912px)
+	.wrapper-landing
+		height 785px
+@media (min-width: 1436px)
+	figure
+		text-align center
+		img
+			width 991px
+			margin 0
 h1
-	font-size 14px
+	font-size 18px
 	font-family arsenal
 	letter-spacing 3px
 	line-height 26px
 	text-align: center;
 	padding: 0 30px;
-	span.kozgo
-		font-family kozgo
+	span.noto
+		font-size 15px
 h2
 	font-size 14px
 	font-family arsenal
@@ -49,7 +60,7 @@ h2
 	align-items center
 	justify-content center
 .wrapper-landing
-	height 663px
+	
 	max-width 1300px
 	background #AD1F24
 	display flex
@@ -60,6 +71,9 @@ h2
 	//padding 70px
 figure
 	margin 0 0 25px
+	text-align center
+	img
+		width calc(100% - 150px)
 .sec-1,.sec-2,.sec-3
 	opacity 0
 .noto
@@ -70,6 +84,7 @@ figure
 @media (max-height: 768px)
 	.wrapper-landing
 		padding 30px 70px
+		height calc(100% - 144px)
 @media (max-width: 768px)
 	figure
 		margin-bottom 15px
@@ -84,18 +99,20 @@ figure
 				&.noto
 					display block
 @media (max-width: 576px)
-	
+	figure
+		margin-bottom 60px
 	.wrapper-landing
-		padding 50px 25px
+		padding 40px 25px
 	h1
-		font-size: 16px;
+		font-size: 30px;
 		font-family: arsenal;
 		letter-spacing: 5px;
-		line-height: 17px;
+		line-height: 40px;
 		text-align: center;
-		padding 0
+		padding: 0;
 		.noto
-			font-size 12px
+			font-size: 12px;
+			line-height: 22px;
 			margin-top 5px
 			letter-spacing 5px
 			font-family notoL
