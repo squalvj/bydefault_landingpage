@@ -101,21 +101,26 @@ figure
 @media (max-width: 576px)
 	figure
 		margin-bottom 60px
+		img
+			width calc(100% - 120px)
 	.wrapper-landing
 		padding 40px 25px
 	h1
 		font-size: 30px;
 		font-family: arsenal;
-		letter-spacing: 5px;
+		letter-spacing: 3px;
 		line-height: 40px;
 		text-align: center;
 		padding: 0;
-		.noto
-			font-size: 12px;
+		span.noto
+			letter-spacing: 3px;
+			font-size: 13px;
 			line-height: 22px;
 			margin-top 5px
-			letter-spacing 5px
 			font-family notoL
 @media (max-width: 420px)
 	.br-mobile
 			display inherit
+@media (max-width: 320px)
+	h1
+		font-size 28px
